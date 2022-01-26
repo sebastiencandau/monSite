@@ -1,5 +1,8 @@
 @font-face { 	font-family: "Louis"; 	src: url('fonts/Louis_George_Cafe.ttf'); }
-
+body{
+  background-color: #333;
+  color: #ededed;
+}
 #body{
     font-family: "Louis";
 }
@@ -193,16 +196,37 @@
   }
 
   #about{
+    margin-top: 3em;
+    display: flex;
+    padding-right: 30em;
+  }
+
+  #about>img{
+    width: 20em;
+    margin-left: 3em;
+    margin-right: 3em ;
+  }
+
+  #about>p{
+    margin-top: 4em;
+  }
+
+  #about>p>img{
+    width: 1.7em;
+  }
+
+  #aWork{
     margin-top: 1em;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    border: solid 3px #333;
+    margin-left: 5em;
+    margin-right: 5em;
     text-align: center;
-    background-color: #333;
   }
 
   #work{
     display: flex;
     justify-content: space-between;
+    text-align: center;
     margin-left: 1em;
     margin-right: 1em;
   }
