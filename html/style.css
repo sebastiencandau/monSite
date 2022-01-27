@@ -8,6 +8,11 @@ body{
 }
 
 /* ******************** NAV BAR ******************** */
+
+#root{
+  font-family: "Louis";
+}
+
 .topnav {
     background-color: #333;
     display: flex;
@@ -29,6 +34,75 @@ body{
     display: none;
   }
   
+  #about{
+    margin-top: 3em;
+    display: flex;
+    padding-right: 30em;
+  }
+
+  #about>img{
+    width: 20em;
+    margin-left: 3em;
+    margin-right: 3em ;
+  }
+
+  #about>p{
+    margin-top: 4em;
+  }
+
+ .quote{
+    width: 1.7em;
+  }
+
+  #aWork{
+    margin-top: 1em;
+    margin-left: 5em;
+    margin-right: 5em;
+    text-align: center;
+  }
+
+  #work{
+    border-bottom: solid 3px #8ae150;
+    border-top: solid 3px #8ae150;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  #work>div>a>img{
+    width: 200px;
+    height: 200px;    
+  }
+
+  #boxe{
+    margin-top: 6em;
+    display: flex;
+    padding-left: 30em;
+  }
+
+  #boxe>img{
+    margin-left: 3em;
+    margin-right: 3em ;
+    width: 20em;
+    height: 20em;
+  }
+
+  #boxe>p{
+    margin-top: 4em;
+  }
+
+
+
+
+
+
+
+  /* RESPONSIVE */
+
   @media only screen and (max-width: 768px) {
     /* hide classic menu */
     #topnav_menu {
@@ -42,6 +116,7 @@ body{
   
     /* disable horizontal scrolling  */
     #root {
+      font-family: "Louis";
       position: relative;
       overflow-x: hidden;
     }
@@ -193,45 +268,30 @@ body{
       -o-transform: rotate(-45deg);
       transform: rotate(-45deg);
     }
-  }
 
-  #about{
-    margin-top: 3em;
-    display: flex;
-    padding-right: 30em;
-  }
 
-  #about>img{
-    width: 20em;
-    margin-left: 3em;
-    margin-right: 3em ;
-  }
+    #about{
+      background-color: #0078b4;
+      text-align: center;
+      display: block;
+    }
 
-  #about>p{
-    margin-top: 4em;
-  }
+    #about>img{
+      width: 20em;
+      margin-left: 1em;
+      margin-right: 1em ;
+    }
+  
+    #about>p{
+      width: 400px;
+      margin-top: 1em;
+    }
+  
+    #about>p>img{
+      width: 1.7em;
+    }
 
-  #about>p>img{
-    width: 1.7em;
-  }
-
-  #aWork{
-    margin-top: 1em;
-    border: solid 3px #333;
-    margin-left: 5em;
-    margin-right: 5em;
-    text-align: center;
-  }
-
-  #work{
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    margin-left: 1em;
-    margin-right: 1em;
-  }
-
-  #work>div>a>img{
-    width: 200px;
-    height: 200px;    
+    #work{
+      display: none;
+    }
   }
