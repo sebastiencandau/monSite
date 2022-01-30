@@ -12,30 +12,40 @@
     <header>
         <div id="root">
             <div id="topnav" class="topnav">
-              <a id="home_link" class="topnav_link" href="/">ACCUEUIL</a>
+              <div class="navright">
+                <a id="home_link" class="topnav_link" href="/">ACCUEUIL</a>
           
-              <!-- Classic Menu -->
-              <nav role="navigation" id="topnav_menu">
-                <a class="topnav_link" href="/about">Á PROPOS</a>
-                <a class="topnav_link" href="/contact-us">CONTACT</a>
-              </nav>
+                <!-- Classic Menu -->
+                <nav role="navigation" id="topnav_menu">
+                  <a class="topnav_link" href="/about">Á PROPOS</a>
+                  <a class="topnav_link" href="/contact-us">CONTACT</a>
+                  <a class="topnav_link" href="/coincrypto">COIN CRYPTO</a>
+                </nav>
           
-              <a id="topnav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()">
-                <!-- Some spans to act as a hamburger -->
-                <span></span>
-                <span></span>
-                <span></span>
-              </a>
+                <a id="topnav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()">
+                  <!-- Some spans to act as a hamburger -->
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </a>
           
-              <!-- Responsive Menu -->
-              <nav role="navigation" id="topnav_responsive_menu">
-                <ul>
-                  <li><a href="/">Accueuil</a></li>
-                  <li><a href="/about">À propos</a></li>
-                  <li><a href="/contact-us">Contact</a></li>
-                  <li><a href="/privacy-policy">Connexion</a></li>
-                </ul>
-              </nav>
+                <!-- Responsive Menu -->
+
+                <nav role="navigation" id="topnav_responsive_menu">
+                  <ul>
+                    <li><a href="/">Accueuil</a></li>
+                    <li><a href="/about">À propos</a></li>
+                    <li><a href="/contact-us">Contact</a></li>
+                    <li><a href="/privacy-policy">Connexion</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div id="account">
+                <a href="/account">
+                <img id="userwhite" src="ressources/userWhite.png" alt="account">
+                <img id="usergreen" src="ressources/userGreen.png" alt="account">
+                </a>
+              </div>
             </div>
           </div>
     </header>
@@ -56,19 +66,19 @@
           <div>
             <h3>Site vitrine</h3>
             <a href="https://sebastiencandau.github.io/oeufs/">
-            <img src="ressources/oeufs.PNG" alt="oeufs">
+            <img src="ressources/eggs.png" alt="oeufs">
             </a>
           </div>
           <div>
             <h3>Projets java</h3>
             <a href="https://github.com/sebastiencandau/GomokuProject">
-            <img src="ressources/sokoban.PNG" alt="sokoban">
+            <img src="ressources/java.png" alt="sokoban">
             </a>
           </div>
           <div>
             <h4>Librairie de disques</h4>
             <a href="https://github.com/sebastiencandau/Projet-SI-boutique-de-disque.git">
-            <img src="ressources/disk.PNG" alt="disk">
+            <img src="ressources/vinyl.png" alt="disk">
             </a>
         </div>
         </div>
@@ -83,6 +93,57 @@
           <img class="quote" src="ressources/left-quotes-symbol.png" alt="quote">
         </p>
         <img src="ressources/boxe2.jpg" alt="boxe">
+      </div>
+      <div id="contactGlobal">
+        <div id="contact">
+          <h1>Contact</h1>
+            <form action="/" method="post">
+            <input type="email" name="email" placeholder="E-mail">
+            <input type="text" name="name" placeholder="Nom">
+            <textarea name="msg" id="" cols="40" rows="8" placeholder="Votre message..."></textarea>
+            <input id="button" type="submit" name="send" value="Envoyer">
+            </form>
+        </div>
+      </div>
+      <div id="crypto">
+        <h1>Coin crypto</h1>
+        <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div id="tradingview_60334"></div>
+  <div class="tradingview-widget-copyright"><a href="https://fr.tradingview.com/symbols/BTCUSD/?exchange=COINBASE" rel="noopener" target="_blank"><span class="blue-text">BTCUSD graphique</span></a> par TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  "width": 980,
+  "height": 610,
+  "symbol": "COINBASE:BTCUSD",
+  "interval": "D",
+  "timezone": "Etc/UTC",
+  "theme": "light",
+  "style": "1",
+  "locale": "fr",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "allow_symbol_change": true,
+  "studies": [
+    "Volume@tv-basicstudies"
+  ],
+  "container_id": "tradingview_60334"
+}
+  );
+  </script>
+</div>
+<!-- TradingView Widget END -->
+<p>
+  <img class="quote" src="ressources/right-quotes-symbol-ConvertImage.png" alt="quote">
+  Bitcoin donne la possibilité aux gens de réellement posséder leur argent. Vous ne pouvez 
+  pas posséder quelque chose si quelqu’un peu diluer la valeur correspondante en en produisant davantage 
+  ou en jouant sur l’inflation. Avec Bitcoin, le montant qui est créé est connu et c’est tout.
+  <img class="quote" src="ressources/left-quotes-symbol.png" alt="quote">
+</p>
+<p style="color: #8ae150;">Trace Mayer</p>
+<p>Accéder au <a href="/coincrypto">coin crypto</a></p>
       </div>
     </div>
 </body>
