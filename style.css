@@ -217,7 +217,6 @@ body{
   
     /* disable horizontal scrolling  */
     #root {
-      font-family: "Louis";
       position: relative;
       overflow-x: hidden;
     }
@@ -281,7 +280,7 @@ body{
     #topnav_hamburger_icon {
       display: block;
       position: relative;
-      margin: 16px;
+      margin-left: 10em;
       width: 33px;
       height: 28px;
   
@@ -372,7 +371,7 @@ body{
 
 
     #about{
-      background-color: #0078b4;
+      padding-right: 1em;
       text-align: center;
       display: block;
     }
@@ -423,7 +422,8 @@ body{
     }
 
     #body{
+      margin-left: auto;
+      margin-right: auto;
       width: 19em;
-      background-color: aqua;
     }
   }
